@@ -47,48 +47,6 @@
             margin: 0;
         }
     </style>
-</head>
-
-<body>
-    <div id="container">
-        <input type="number" id="nb1" placeholder="Enter first number">
-        <input type="number" id="nb2" placeholder="Enter second number">
-        <span id="resultat"></span>
-        <button onclick="calculerSomme()">Calculate Sum</button>
-
-        <hr>
-
-        <input type="text" id="zone1" placeholder="Enter value 1">
-        <input type="text" id="zone2" placeholder="Enter value 2">
-        <button onclick="swapValues()">Swap</button>
-
-        <hr>
-
-        <input type="text" id="name" placeholder="Enter full name">
-        <button onclick="separateName()">Separate Name</button>
-        <p id="lastName"></p>
-        <p id="firstName"></p>
-
-        <hr>
-
-        <input type="number" id="number">
-        <button onclick="calculerValeurAbsolue()">Calculate Absolute Value</button>
-        <p>Absolute Value: <span id="resultat_abs"></span></p>
-
-        <hr>
-
-        <input type="number" id="nombre1">
-        <input type="number" id="nombre2">
-        <select id="operation">
-            <option value="/">/</option>
-            <option value="+">+</option>
-            <option value="-">-</option>
-            <option value="*">x</option>
-        </select>
-        <button onclick="calculer()">Calculate</button>
-        <p>Result: <span id="resultat_operation"></span></p>
-    </div>
-
     <script>
         function calculerSomme() {
             let nb1 = document.getElementById('nb1').value;
@@ -144,6 +102,47 @@
             document.getElementById("resultat_operation").textContent = resultat;
         }
     </script>
+</head>
+
+<body>
+    <div id="container">
+        <input type="number" id="nb1" placeholder="Enter first number">
+        <input type="number" id="nb2" placeholder="Enter second number">
+        <span id="resultat"></span>
+        <button onclick="calculerSomme()">Calculate Sum</button>
+
+        <hr>
+
+        <input type="text" id="zone1" placeholder="Enter value 1">
+        <input type="text" id="zone2" placeholder="Enter value 2">
+        <button onclick="swapValues()">Swap</button>
+
+        <hr>
+
+        <input type="text" id="name" placeholder="Enter full name">
+        <button onclick="separateName()">Separate Name</button>
+        <p id="lastName"></p>
+        <p id="firstName"></p>
+
+        <hr>
+
+        <input type="number" id="number">
+        <button onclick="calculerValeurAbsolue()">Calculate Absolute Value</button>
+        <p>Absolute Value: <span id="resultat_abs"></span></p>
+
+        <hr>
+
+        <input type="number" id="nombre1">
+        <input type="number" id="nombre2">
+        <select id="operation">
+            <option value="/">/</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">x</option>
+        </select>
+        <button onclick="calculer()">Calculate</button>
+        <p>Result: <span id="resultat_operation"></span></p>
+    </div>
 </body>
 
 </html>
